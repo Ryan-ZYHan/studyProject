@@ -42,23 +42,23 @@ class Ui_userLoginWindow(object):
 
         self.formLayout.setWidget(1, QFormLayout.LabelRole, self.label_2)
 
-        self.lineEdit = QLineEdit(self.formLayoutWidget)
-        self.lineEdit.setObjectName(u"lineEdit")
+        self.ledt_userName = QLineEdit(self.formLayoutWidget)
+        self.ledt_userName.setObjectName(u"ledt_userName")
 
-        self.formLayout.setWidget(0, QFormLayout.FieldRole, self.lineEdit)
+        self.formLayout.setWidget(0, QFormLayout.FieldRole, self.ledt_userName)
 
-        self.lineEdit_2 = QLineEdit(self.formLayoutWidget)
-        self.lineEdit_2.setObjectName(u"lineEdit_2")
-        self.lineEdit_2.setEchoMode(QLineEdit.Password)
+        self.ledt_password = QLineEdit(self.formLayoutWidget)
+        self.ledt_password.setObjectName(u"ledt_password")
+        self.ledt_password.setEchoMode(QLineEdit.Password)
 
-        self.formLayout.setWidget(1, QFormLayout.FieldRole, self.lineEdit_2)
+        self.formLayout.setWidget(1, QFormLayout.FieldRole, self.ledt_password)
 
-        self.pushButton = QPushButton(self.centralwidget)
-        self.pushButton.setObjectName(u"pushButton")
-        self.pushButton.setGeometry(QRect(70, 140, 75, 24))
-        self.pushButton_2 = QPushButton(self.centralwidget)
-        self.pushButton_2.setObjectName(u"pushButton_2")
-        self.pushButton_2.setGeometry(QRect(250, 140, 75, 24))
+        self.pbtn_login = QPushButton(self.centralwidget)
+        self.pbtn_login.setObjectName(u"pbtn_login")
+        self.pbtn_login.setGeometry(QRect(70, 140, 75, 24))
+        self.pbtn_reset = QPushButton(self.centralwidget)
+        self.pbtn_reset.setObjectName(u"pbtn_reset")
+        self.pbtn_reset.setGeometry(QRect(250, 140, 75, 24))
         userLoginWindow.setCentralWidget(self.centralwidget)
         self.statusbar = QStatusBar(userLoginWindow)
         self.statusbar.setObjectName(u"statusbar")
@@ -73,7 +73,7 @@ class Ui_userLoginWindow(object):
         userLoginWindow.setWindowTitle(QCoreApplication.translate("userLoginWindow", u"\u7528\u6237\u767b\u5f55", None))
         self.label.setText(QCoreApplication.translate("userLoginWindow", u"\u7528\u6237\u540d\uff1a", None))
         self.label_2.setText(QCoreApplication.translate("userLoginWindow", u"\u5bc6   \u7801\uff1a", None))
-        self.pushButton.setText(QCoreApplication.translate("userLoginWindow", u"\u767b\u5f55", None))
-        self.pushButton_2.setText(QCoreApplication.translate("userLoginWindow", u"\u91cd\u7f6e", None))
+        self.pbtn_login.setText(QCoreApplication.translate("userLoginWindow", u"\u767b\u5f55", None))
+        self.pbtn_reset.setText(QCoreApplication.translate("userLoginWindow", u"\u91cd\u7f6e", None))
     # retranslateUi
 
