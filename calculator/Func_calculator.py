@@ -46,5 +46,6 @@ class Func_calculatorMethod(object):
         self.pbtn_dot.clicked.connect(lambda:self.append_number('.'))
         self.pbtn_equal.clicked.connect(self.equal)
         self.pbtn_backspace.clicked.connect(self.backspace)
+        self.pbtn_clear.clicked.connect(self.clear)     
         
     
