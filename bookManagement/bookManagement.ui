@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>bookManagementWindow</class>
+ <widget class="QMainWindow" name="bookManagementWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>800</width>
+    <height>600</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>图书管理系统</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>800</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="nativeMenuBar">
+    <bool>true</bool>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>图书管理</string>
+    </property>
+    <addaction name="act_addBook"/>
+    <addaction name="act_manageBookInfos"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>图书类别管理</string>
+    </property>
+    <addaction name="act_addBookType"/>
+    <addaction name="act_manageBookTypeInfos"/>
+   </widget>
+   <widget class="QMenu" name="menu_3">
+    <property name="title">
+     <string>系统设置</string>
+    </property>
+    <addaction name="act_changePassword"/>
+    <addaction name="act_exitSafely"/>
+    <addaction name="separator"/>
+    <addaction name="act_aboutAuthor"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menu_2"/>
+   <addaction name="menu_3"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="act_addBook">
+   <property name="text">
+    <string>图书添加</string>
+   </property>
+  </action>
+  <action name="act_manageBookInfos">
+   <property name="text">
+    <string>图书信息管理</string>
+   </property>
+  </action>
+  <action name="act_addBookType">
+   <property name="text">
+    <string>图书类别添加</string>
+   </property>
+  </action>
+  <action name="act_manageBookTypeInfos">
+   <property name="text">
+    <string>图书类别信息管理</string>
+   </property>
+  </action>
+  <action name="act_changePassword">
+   <property name="text">
+    <string>修改密码</string>
+   </property>
+  </action>
+  <action name="act_exitSafely">
+   <property name="text">
+    <string>安全退出</string>
+   </property>
+  </action>
+  <action name="act_aboutAuthor">
+   <property name="text">
+    <string>关于作者</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

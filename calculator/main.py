@@ -1,3 +1,6 @@
+"""
+计算器
+"""
 from typing import Optional
 import PySide6.QtCore
 from PySide6.QtWidgets import QApplication, QWidget, QMainWindow
